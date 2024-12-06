@@ -1,7 +1,7 @@
 {
   "name": "Governor Add-ons",
   "description": "A repository for custom Home Assistant add-ons",
-  "url": "https://github.com/sroka-sec/Governor",
+  "url": "https://github.com/sroka-sec/homeassistant-addons",
   "arch": ["amd64", "armv7", "armhf", "aarch64"],
   "maintainer": "Bartosz Sroka <bartosz.sroka@securinet.pl>",
   "version": "1.0.0"
