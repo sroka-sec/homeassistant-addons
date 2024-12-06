@@ -1,0 +1,30 @@
+{
+  "name": "Governor Addon",
+  "version": "0.1.0",
+  "slug": "governor_addon",
+  "description": "An add-on for managing energy devices with dynamic tarrifs",
+  "startup": "services",
+  "boot": "auto",
+  "ports": {
+    "5000/tcp": 5000
+  },
+  "schema": {
+    "main_meter": {
+      "type": "string",
+      "description": "Select the main electricity meter",
+      "example": "sensor.main_electricity_meter"
+    },
+    "devices_to_control": {
+      "type": "list",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of devices to control (binary switches, power devices)"
+    }
+  },
+  "options": {
+    "main_meter": "",
+    "devices_to_control": []
+  },
+  "image": "local/governor_addon"
+}

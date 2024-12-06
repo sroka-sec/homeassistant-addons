@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Energy Management Configuration</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Energy Management Addon</h1>
+    <form id="configForm">
+      <label for="mainMeter">Main Electricity Meter:</label>
+      <input type="text" id="mainMeter" name="mainMeter" placeholder="sensor.main_electricity_meter" required>
+
+      <label for="devices">Devices to Control:</label>
+      <textarea id="devices" name="devices" placeholder="Enter device IDs, one per line" rows="5"></textarea>
+
+      <button type="submit">Save Configuration</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
